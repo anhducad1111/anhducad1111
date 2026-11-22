@@ -32,11 +32,11 @@ Embedded and IoT Engineer with 1.5+ years of hands-on experience in C/C++, ARM C
 ### Embedded / IoT Engineer | Enable Startup — Da Nang, Vietnam
 *Jun 2025 – Present*
 
-- Developed Python (`PyQt6`, `PyQtGraph`) desktop GUIs for 4-channel laser monitoring (60 FPS, 48h continuous test) and 3-axis scanning workflows (500 × 500 grid in < 22 min); resolved chart lag and collaborated on control logic integration.
+- Developed Python (`PyQt6`, `PyQtGraph`) desktop GUIs for 4-channel laser monitoring (60 FPS, 48h continuous test) and 3-axis scanning workflows (500x500 grid in < 22 min); resolved chart lag and collaborated on control logic integration.
 - Maintained and debugged C# .NET WPF instrumentation & test tools (1 Mbps UART cryogenic monitor, 25-channel 100 Hz binary DAQ, dual-port 921.6k/1M baud PCB tester); fixed UI freezes and COM port disconnects, stabilizing 30 FPS rendering (~140 MB RAM over 48h runs) and < 45s PCB test cycles (vs. 10 min manual).
 - Developed the `SensaTuner` Android app (Kotlin, Jetpack Compose) for industrial sensor setup, 60 FPS vibration plots, and BLE GATT OTA updates (MTU 247, `.cyacd`/`.cyacd2` with automatic retry), achieving 100% pass rate across 150+ OTA test cycles.
 - Tested and maintained `PSoC 6` firmware + `nRF9160` LTE-M/NB-IoT cellular modem communication over UART AT commands; debugged buffer desync and pin-mapping issues via serial logs and oscilloscope.
-- Created lightweight internal automation utilities and Python scripts to streamline repetitive AT-command validation, device flashing, and serial port checks on the test bench.
+- Created lightweight internal automation utilities and Python scripts to streamline repetitive AT command validation, device flashing, and serial port checks on the test bench.
 - Collaborated with hardware engineers and Singapore-based partners across 8+ industrial instrumentation projects on system integration and bench validation.
 
 ---
@@ -75,7 +75,7 @@ Embedded and IoT Engineer with 1.5+ years of hands-on experience in C/C++, ARM C
 
 - Contributed to PSoC 6 firmware maintenance by adding helper routines, testing basic algorithm updates, and fixing minor firmware bugs.
 - Executed end-to-end LTE-M / NB-IoT cellular modem validation over UART AT commands, resolving communication timeout and pin-mapping issues via serial logs and oscilloscope.
-- Built Python helper scripts to automate repetitive AT-command test sequences on the hardware bench.
+- Built Python helper scripts to automate repetitive AT command test sequences on the hardware bench.
 
 ---
 
@@ -90,7 +90,7 @@ Embedded and IoT Engineer with 1.5+ years of hands-on experience in C/C++, ARM C
 ### Smart Water Meter & Edge AI Monitoring System
 *Graduation Thesis — Edge AI / IoT — Scored 8.7/10*
 
-- Built an offline edge-AI water meter reader on `ESP32-CAM` using an INT8-quantized CNN model (`TensorFlow Lite Micro`, `Embedded C++`) to recognize mechanical meter digits without cloud dependency.
+- Built an offline Edge AI water meter reader on `ESP32-CAM` using an INT8-quantized CNN model (`TensorFlow Lite Micro`, `Embedded C++`) to recognize mechanical meter digits without cloud dependency.
 - Transmitted digitized meter readings over `LoRa` and `MQTT` to a monitoring dashboard.
 - Achieved ~98% digit recognition accuracy across 612 collected meter frames (1,757 labeled digits) under varied lighting conditions.
 
@@ -101,7 +101,7 @@ Embedded and IoT Engineer with 1.5+ years of hands-on experience in C/C++, ARM C
 ### Vietnam-Korea University of Information Technology and Communications (VKU)
 *Aug 2021 – Apr 2026*  
 Bachelor of Science in Information Technology — Major: IoT & Robotics — Da Nang, Vietnam  
-**GPA**: 3.21 / 4.0 · **Graduation Thesis**: 8.7 / 10
+**GPA**: 3.21/4.0 · **Graduation Thesis**: 8.7/10
 
 ---
 

@@ -32,9 +32,9 @@ Embedded and IoT Engineer specializing in desktop/mobile HMI tools, automated be
 *Jun 2025 – Present*
 
 - Developed the `SensaTuner` Android app (`Kotlin`, `Jetpack Compose`) for industrial sensor configuration, live 60 FPS vibration plotting, and BLE GATT OTA updates, replacing bulky field laptops.
-- Built Python (`PyQt6`, `PyQtGraph`) desktop GUIs for 4-channel laser monitoring (48h continuous test) and 3-axis CNC scanning (500 × 500 grid in < 22 min); resolved chart lag and collaborated on control logic.
+- Built Python (`PyQt6`, `PyQtGraph`) desktop GUIs for 4-channel laser monitoring (48h continuous test) and 3-axis CNC scanning (500x500 grid in < 22 min); resolved chart lag and collaborated on control logic.
 - Maintained and stabilized C# `.NET 8` WPF instrumentation monitors; eliminated UI freezes under 1 Mbps UART streaming (stabilizing ~140 MB RAM at 30 FPS) and fixed COM port disconnects.
-- Isolated `PSoC 6` + LTE-M/NB-IoT UART AT-command faults and pin-mapping issues using oscilloscope and serial port monitors alongside firmware and hardware engineers.
+- Isolated `PSoC 6` + LTE-M/NB-IoT UART AT command faults and pin-mapping issues using oscilloscope and serial port monitors alongside firmware and hardware engineers.
 
 ---
 
@@ -67,7 +67,7 @@ Embedded and IoT Engineer specializing in desktop/mobile HMI tools, automated be
 ### Smart Water Meter & Edge AI Monitoring System
 *Graduation Thesis — Edge AI / IoT — Scored 8.7/10*
 
-- Built an offline edge-AI water meter reader on `ESP32-CAM` (~98% accuracy on 612 collected frames / 1,757 digits) with `LoRa`/`MQTT` telemetry (`Embedded C++`, `TFLite Micro`).
+- Built an offline Edge AI water meter reader on `ESP32-CAM` (~98% accuracy on 612 collected frames / 1,757 digits) with `LoRa`/`MQTT` telemetry (`Embedded C++`, `TFLite Micro`).
 
 ---
 
@@ -76,7 +76,7 @@ Embedded and IoT Engineer specializing in desktop/mobile HMI tools, automated be
 ### Vietnam-Korea University of Information Technology and Communications (VKU)
 *Aug 2021 – Apr 2026*  
 Bachelor of Science in Information Technology — Major: IoT & Robotics — Da Nang, Vietnam  
-**GPA**: 3.21 / 4.0 · **Graduation Thesis**: 8.7 / 10
+**GPA**: 3.21/4.0 · **Graduation Thesis**: 8.7/10
 
 ---
 

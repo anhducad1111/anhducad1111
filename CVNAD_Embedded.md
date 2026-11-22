@@ -34,7 +34,7 @@ Embedded and IoT Engineer with 1.5+ years of experience in C/C++ firmware on ARM
 
 - Tested and debugged `PSoC 6` firmware interfacing an `nRF9160` LTE-M/NB-IoT cellular modem via UART AT commands, resolving buffer desynchronization and timeout faults.
 - Validated BLE GATT communication (MTU 247) and wireless bootloader upgrades (`.cyacd`/`.cyacd2`) across `PSoC 6 / 5LP` hardware revisions, fixing handshake and retry edge cases.
-- Built automated bench test scripts and C# WPF / Python serial utilities (handling 1 Mbps UART and 25-channel 100 Hz binary streams) to eliminate manual verification, cutting PCB test cycles from 10 min to < 45s.
+- Built Python and C# WPF serial test utilities (1 Mbps UART, 25-channel 100 Hz streams) to automate bench verification, cutting PCB test cycles from 10 min to < 45s.
 
 ---
 
@@ -52,7 +52,7 @@ Embedded and IoT Engineer with 1.5+ years of experience in C/C++ firmware on ARM
 ### Smart Water Meter & Edge AI Monitoring System
 *Graduation Thesis — Edge AI / IoT — Scored 8.7/10*
 
-- Built an offline edge-AI water meter reader on `ESP32-CAM` with an INT8-quantized CNN (`Embedded C++`, `TensorFlow Lite Micro`) and `LoRa`/`MQTT` telemetry uplink.
+- Built an offline Edge AI water meter reader on `ESP32-CAM` with an INT8-quantized CNN (`Embedded C++`, `TensorFlow Lite Micro`) and `LoRa`/`MQTT` telemetry uplink.
 - Achieved ~98% digit recognition accuracy across 612 collected meter frames (1,757 labeled digits) under varied lighting conditions.
 
 ---
@@ -60,8 +60,8 @@ Embedded and IoT Engineer with 1.5+ years of experience in C/C++ firmware on ARM
 ### Cellular IoT & PSoC 6 Firmware Validation (Sensaio)
 *Embedded Firmware & Bench Testing — C / C++ / UART AT Commands*
 
-- Contributed helper routines, basic algorithm updates, and minor bug fixes to `PSoC 6` firmware; isolated UART pin-mapping and AT-command state faults via oscilloscope and serial logs.
-- Wrote Python bench scripts to automate repetitive AT-command verification sequences.
+- Contributed helper routines, basic algorithm updates, and minor bug fixes to `PSoC 6` firmware; isolated UART pin-mapping and AT command state faults via oscilloscope and serial logs.
+- Wrote Python bench scripts to automate repetitive AT command verification sequences.
 
 ---
 
@@ -77,7 +77,7 @@ Embedded and IoT Engineer with 1.5+ years of experience in C/C++ firmware on ARM
 ### Vietnam-Korea University of Information Technology and Communications (VKU)
 *Aug 2021 – Apr 2026*  
 Bachelor of Science in Information Technology — Major: IoT & Robotics — Da Nang, Vietnam  
-**GPA**: 3.21 / 4.0 · **Graduation Thesis**: 8.7 / 10
+**GPA**: 3.21/4.0 · **Graduation Thesis**: 8.7/10
 
 ---
 
