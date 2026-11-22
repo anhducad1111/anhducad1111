@@ -13,7 +13,7 @@
 
 ## SUMMARY
 
-Embedded and IoT Engineer with 1.5+ years of experience specializing in hardware-software integration, desktop/mobile HMI tools, and automated bench testing. Proficient in Python (PyQt6/PyQtGraph), C# (.NET WPF), Android (Kotlin), and C/C++ to interface hardware over UART (up to 1 Mbps), TCP/IP, and BLE GATT, resolve UI bottlenecks, and automate repetitive manual verification.
+Embedded and IoT Engineer specializing in desktop/mobile HMI tools, automated bench testing, and hardware-software integration. Proficient in Python (PyQt6/PyQtGraph), C# (.NET 8 WPF/ScottPlot 5), and Android (Kotlin/Jetpack Compose) to resolve UI bottlenecks and build field utilities, backed by C/C++ and protocol debugging skills (UART, SPI, I²C, BLE GATT, AT commands) using oscilloscope and serial monitors.
 
 ---
 
@@ -22,28 +22,27 @@ Embedded and IoT Engineer with 1.5+ years of experience specializing in hardware
 ### Junior Firmware Developer (Secondment) | THESIS PTE LTD — Singapore
 *Sep 2026 – Present*
 
-- On international secondment via Enable Startup; built lightweight Python automation scripts and serial logging utilities to eliminate repetitive manual bench checks on ARM Cortex-M boards.
-- Tested UART, SPI, I²C, GPIO, and ADC hardware interfaces using serial port monitors and oscilloscope, reproducing and logging integration bugs.
-- Maintained C/C++ firmware modules and implemented basic algorithm updates under senior engineer review.
+- On international secondment via Enable Startup; built lightweight Python test automation scripts and serial logging utilities to eliminate repetitive manual bench checks on ARM Cortex-M boards.
+- Automated multi-step peripheral verification sequences and captured structured diagnostic logs for hardware-firmware integration.
+- Tested UART, SPI, I²C, GPIO, and ADC interfaces using oscilloscope and serial port monitors, and maintained C/C++ firmware modules under senior engineer review.
 
 ---
 
 ### Embedded / IoT Engineer | Enable Startup — Da Nang, Vietnam
 *Jun 2025 – Present*
 
-- Developed Python (`PyQt6`, `PyQtGraph`) desktop GUIs for 4-channel laser monitoring (60 FPS, 48h continuous test) and 3-axis scanning (500 × 500 grid in < 22 min); resolved chart lag and collaborated on control logic integration.
-- Maintained and stabilized C# .NET WPF monitors and test fixtures (1 Mbps UART cryogenic monitor, 25-channel 100 Hz binary DAQ, dual-port 921.6k/1M baud PCB tester); fixed UI freezes (~140 MB RAM at 30 FPS over 48h runs) and supported < 45s PCB test cycles (vs. 10 min manual).
-- Built the `SensaTuner` Android app (Kotlin, Jetpack Compose) for sensor configuration, 60 FPS vibration plots, and BLE GATT OTA updates (MTU 247, `.cyacd`/`.cyacd2`), achieving 100% pass rate across 150+ OTA cycles.
-- Created lightweight internal automation utilities to streamline repetitive AT-command checks, device flashing, and serial verification on the test bench.
-- Tested `PSoC 6` + LTE-M/NB-IoT cellular integration over UART AT commands with cross-functional hardware teams.
+- Developed the `SensaTuner` Android app (`Kotlin`, `Jetpack Compose`) for industrial sensor configuration, live 60 FPS vibration plotting, and BLE GATT OTA updates, replacing bulky field laptops.
+- Built Python (`PyQt6`, `PyQtGraph`) desktop GUIs for 4-channel laser monitoring (48h continuous test) and 3-axis CNC scanning (500 × 500 grid in < 22 min); resolved chart lag and collaborated on control logic.
+- Maintained and stabilized C# `.NET 8` WPF instrumentation monitors; eliminated UI freezes under 1 Mbps UART streaming (stabilizing ~140 MB RAM at 30 FPS) and fixed COM port disconnects.
+- Isolated `PSoC 6` + LTE-M/NB-IoT UART AT-command faults and pin-mapping issues using oscilloscope and serial port monitors alongside firmware and hardware engineers.
 
 ---
 
 ## TECHNICAL SKILLS
 
-- **HMI & Test Tooling**: Python (PyQt6, PyQtGraph, PySerial), C# (.NET 8, WPF, ScottPlot 5), Kotlin (Android Jetpack Compose)
-- **Embedded & Hardware**: C, C++, ARM Cortex-M, PSoC 6 / 5LP, STM32, ESP32, Bare-metal, UART (up to 1 Mbps), SPI, I²C, GPIO, ADC
-- **Protocols & Integration**: BLE GATT (MTU 247, OTA DFU), Cellular AT Commands, TCP/IP, MQTT, LoRa
+- **HMI & Test Tooling**: Python (PyQt6, PyQtGraph, PySerial), C# (.NET 8, WPF, ScottPlot 5), Kotlin (Android Jetpack Compose, Coroutines)
+- **Protocols & Integration**: BLE GATT (MTU 247, OTA DFU), Cellular AT Commands, TCP/IP, MQTT, LoRa, Binary UART (up to 1 Mbps)
+- **Embedded & Hardware**: C, C++, ARM Cortex-M, PSoC 6 / 5LP, STM32, ESP32, UART, SPI, I²C, GPIO, ADC
 - **Laboratory & Tools**: Oscilloscope, Serial Port Monitor, Multimeter, Git, Linux
 
 ---
@@ -53,21 +52,22 @@ Embedded and IoT Engineer with 1.5+ years of experience specializing in hardware
 ### Industrial BLE Configuration & OTA Tool (SensaTuner)
 *Embedded Mobile Tool — Kotlin / BLE GATT / Bootloader Update*
 
-- Developed an Android tool in Kotlin for on-site PSoC 6/5LP setup and BLE GATT OTA updates (`.cyacd`/`.cyacd2`, up to 3 retries/row), achieving 100% pass rate across 150+ OTA test cycles and 60 FPS live vibration plots.
+- Implemented `.cyacd` / `.cyacd2` firmware container parsing and bootloader sequencing over BLE GATT (MTU 247, up to 3 retries/row, 10 ms back-off), achieving 100% pass rate across 150+ field OTA cycles.
+- Built diagnostic telemetry views and real-time vibration spectrum overlays to support field deployment engineers.
 
 ---
 
-### Real-Time Laser Monitoring Workbench (Hilltop MTS)
-*Desktop Instrumentation — Python / PyQt / Sensor Interface*
+### Automated PCB Tester & Multi-Channel DAQ Tools
+*Desktop Test Tooling — C# WPF / ScottPlot 5 / Dual-COM Serial*
 
-- Built the Python (`PyQt6`, `PyQtGraph`) 4-channel oscilloscope GUI (60 FPS, 48h test run); improved chart responsiveness and collaborated on control logic integration.
+- Stabilized dual-port ATE software (921.6k & 1.0M baud) and 25-channel 100 Hz (`109-byte` frame) binary UART DAQ monitors, cutting PCB test cycles from 10 min to < 45s across 500+ pilot runs.
 
 ---
 
 ### Smart Water Meter & Edge AI Monitoring System
 *Graduation Thesis — Edge AI / IoT — Scored 8.7/10*
 
-- Built an offline edge-AI water meter reader on `ESP32-CAM` (~98% accuracy on 612 collected frames / 1,757 digits) with LoRa/MQTT reporting (`Embedded C++`, `TFLite Micro`).
+- Built an offline edge-AI water meter reader on `ESP32-CAM` (~98% accuracy on 612 collected frames / 1,757 digits) with `LoRa`/`MQTT` telemetry (`Embedded C++`, `TFLite Micro`).
 
 ---
 

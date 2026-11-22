@@ -13,7 +13,7 @@
 
 ## SUMMARY
 
-Embedded and IoT Engineer with 1.5+ years of experience in C/C++, ARM Cortex-M platforms (PSoC 6, STM32, ESP32), and hardware-software integration over UART (up to 1 Mbps), SPI, I²C, and BLE GATT. Combines firmware testing and bench debugging with Python, C# WPF, and Android (Kotlin) tooling to automate verification and stabilize device communications.
+Embedded and IoT Engineer with 1.5+ years of experience in C/C++ firmware on ARM Cortex-M platforms (PSoC 6/5LP, STM32, ESP32), peripheral testing (UART, SPI, I²C, GPIO, ADC), and wireless protocols (BLE GATT, Cellular AT commands, LoRa, MQTT). Experienced in hardware bench debugging with oscilloscope and serial logs, plus building Python, C# WPF, and Android tools to automate board verification independently.
 
 ---
 
@@ -22,29 +22,28 @@ Embedded and IoT Engineer with 1.5+ years of experience in C/C++, ARM Cortex-M p
 ### Junior Firmware Developer (Secondment) | THESIS PTE LTD — Singapore
 *Sep 2026 – Present*
 
-- On international secondment via Enable Startup; developed and tested embedded firmware modules and basic control algorithms in C/C++ for ARM Cortex-M targets (PSoC 6, STM32, ESP32) under senior engineer review.
-- Verified peripheral interfaces (UART, SPI, I²C, GPIO, ADC) on hardware boards using bench oscilloscope and serial terminal diagnostics.
-- Reproduced, debugged, and resolved firmware communication issues and pin-configuration bugs during hardware bench bring-up.
-- Built lightweight Python scripts to automate repetitive bench verification steps and log structured test outputs.
+- On international secondment via Enable Startup; developed and maintained C/C++ firmware modules and basic control algorithms for ARM Cortex-M targets (PSoC 6, STM32, ESP32) under senior engineer review.
+- Verified peripheral interfaces (UART, SPI, I²C, GPIO, ADC) on hardware boards using bench oscilloscope probing and serial terminal diagnostics.
+- Reproduced and resolved pin-mapping, timing, and communication faults during hardware bench bring-up.
+- Built lightweight Python scripts to automate repetitive bench verification steps and log structured serial outputs.
 
 ---
 
 ### Embedded / IoT Engineer | Enable Startup — Da Nang, Vietnam
 *Jun 2025 – Present*
 
-- Tested and debugged cellular IoT communication (`PSoC 6` + `nRF9160` LTE-M/NB-IoT modem via UART AT commands), resolving buffer desync and pin-mapping issues.
-- Built the `SensaTuner` Android tool (Kotlin) with BLE GATT (MTU 247) and `.cyacd`/`.cyacd2` OTA updates (automatic retry), achieving 100% pass rate across 150+ OTA test cycles.
-- Created automated bench test utilities to eliminate repetitive manual serial verification, AT-command validation, and device flashing steps.
-- Built Python (`PyQt6`/`PyQtGraph`) 60 FPS laser GUI and maintained C# WPF DAQ/ATE tools (1 Mbps UART, 25-channel 100 Hz binary frames, < 45s PCB test cycle), fixing UI freezes and COM bugs.
+- Tested and debugged `PSoC 6` firmware interfacing an `nRF9160` LTE-M/NB-IoT cellular modem via UART AT commands, resolving buffer desynchronization and timeout faults.
+- Validated BLE GATT communication (MTU 247) and wireless bootloader upgrades (`.cyacd`/`.cyacd2`) across `PSoC 6 / 5LP` hardware revisions, fixing handshake and retry edge cases.
+- Built automated bench test scripts and C# WPF / Python serial utilities (handling 1 Mbps UART and 25-channel 100 Hz binary streams) to eliminate manual verification, cutting PCB test cycles from 10 min to < 45s.
 
 ---
 
 ## TECHNICAL SKILLS
 
-- **Embedded & Firmware**: C, C++, ARM Cortex-M, PSoC 6 / 5LP, STM32, ESP32, Bare-metal, Basic RTOS, UART (up to 1 Mbps), SPI, I²C, GPIO, ADC
-- **Wireless & Protocols**: BLE GATT (MTU 247, OTA DFU), Cellular IoT (AT Commands), LoRa, MQTT, TCP/IP
-- **Host Tooling & Software**: Python (PyQt6, PyQtGraph, PySerial), C# (.NET 8, WPF, ScottPlot 5), Kotlin (Android Jetpack Compose)
-- **Laboratory & Tools**: Oscilloscope, Serial Port Monitor, Multimeter, Git, Linux
+- **Embedded & Firmware**: C, C++, ARM Cortex-M, PSoC 6 / 5LP, STM32, ESP32, Bare-metal, Basic RTOS, UART, SPI, I²C, GPIO, ADC
+- **Wireless & Protocols**: BLE GATT (MTU 247, OTA DFU), Cellular IoT (LTE-M / NB-IoT AT Commands), LoRa, MQTT, TCP/IP
+- **Laboratory & Debug Tools**: Oscilloscope, Serial Port Monitor, Digital Multimeter (DMM), Git, Linux
+- **Test Tooling & Software**: Python (PyQt6, PyQtGraph, PySerial), C# (.NET 8, WPF, ScottPlot 5), Kotlin (Android Jetpack Compose)
 
 ---
 
@@ -53,22 +52,23 @@ Embedded and IoT Engineer with 1.5+ years of experience in C/C++, ARM Cortex-M p
 ### Smart Water Meter & Edge AI Monitoring System
 *Graduation Thesis — Edge AI / IoT — Scored 8.7/10*
 
-- Built an offline edge-AI water meter reader on `ESP32-CAM` with INT8-quantized CNN inference and LoRa/MQTT telemetry (`Embedded C++`, `TFLite Micro`).
+- Built an offline edge-AI water meter reader on `ESP32-CAM` with an INT8-quantized CNN (`Embedded C++`, `TensorFlow Lite Micro`) and `LoRa`/`MQTT` telemetry uplink.
 - Achieved ~98% digit recognition accuracy across 612 collected meter frames (1,757 labeled digits) under varied lighting conditions.
 
 ---
 
-### Industrial BLE Configuration & OTA Tool (SensaTuner)
-*Embedded Mobile Tool — Kotlin / BLE GATT / Bootloader Update*
+### Cellular IoT & PSoC 6 Firmware Validation (Sensaio)
+*Embedded Firmware & Bench Testing — C / C++ / UART AT Commands*
 
-- Developed an Android tool in Kotlin for PSoC 6/5LP wireless setup and BLE GATT OTA updates (`.cyacd`/`.cyacd2`, up to 3 retries/row), achieving 100% pass rate across 150+ OTA cycles and 60 FPS vibration plots.
+- Contributed helper routines, basic algorithm updates, and minor bug fixes to `PSoC 6` firmware; isolated UART pin-mapping and AT-command state faults via oscilloscope and serial logs.
+- Wrote Python bench scripts to automate repetitive AT-command verification sequences.
 
 ---
 
-### Real-Time Laser Monitoring Workbench (Hilltop MTS)
-*Desktop Instrumentation — Python / PyQt / Sensor Interface*
+### BLE OTA & Desktop Bench Test Tooling (SensaTuner / Hilltop MTS)
+*Companion Test Tools — Kotlin BLE GATT / Python PyQt6*
 
-- Built the Python (`PyQt6`, `PyQtGraph`) 4-channel oscilloscope GUI (60 FPS, 48h continuous test run); resolved chart lag and collaborated on FPGA control logic integration.
+- Developed the `SensaTuner` Android BLE OTA tool (Kotlin, 100% pass rate across 150+ OTA test cycles) and `PyQt6` 4-channel laser GUI (60 FPS, 48h test run) to verify hardware streams independently.
 
 ---
 
